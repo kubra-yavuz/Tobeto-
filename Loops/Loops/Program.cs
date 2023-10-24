@@ -1,5 +1,4 @@
-﻿//ForLoop();
-
+﻿
 
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -7,16 +6,18 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        int number = 100;
-        while (number >= 0)
+        //ForLoop();
+        //WhileLoop();
+        int number = 10;
+        do
         {
             Console.WriteLine(number);
             number--;
-        }
-        Console.WriteLine("Now number is {0}", number);
+        } while (number>=0);
+
         Console.ReadLine();
 
-            static void ForLoop()
+        static void ForLoop()
         {
 
             // for (int i = 1; i <= 100; i++) = birer arttır.
@@ -31,5 +32,16 @@ internal class Program
             }
             Console.WriteLine("Finished!");
         }
+    }
+
+    private static void WhileLoop()
+    {
+        int number = 100;
+        while (number >= 0)
+        {
+            Console.WriteLine(number);
+            number--;
+        }
+        Console.WriteLine("Now number is {0}", number);
     }
 }
