@@ -1,17 +1,35 @@
-﻿NewMethod();
+﻿//ForLoop();
 
-static void NewMethod()
+
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+internal class Program
 {
-    // for (int i = 1; i <= 100; i++) = birer arttır.
-    // for (int i = 1; i <= 100; i+=2) = tek sayıları yazdır.
-    //for (int i = 2; i <= 100; i+=2) = çift sayıları yazdır.
-    for (int i = 100; i >= 0; i=i-2) 
+    private static void Main(string[] args)
     {
-        Console.WriteLine(i);
+        int number = 100;
+        while (number >= 0)
+        {
+            Console.WriteLine(number);
+            number--;
+        }
+        Console.WriteLine("Now number is {0}", number);
+        Console.ReadLine();
+
+            static void ForLoop()
+        {
+
+            // for (int i = 1; i <= 100; i++) = birer arttır.
+            // for (int i = 1; i <= 100; i+=2) = tek sayıları yazdır.
+            //for (int i = 2; i <= 100; i+=2) = çift sayıları yazdır.
+            ForLoop();
+            Console.ReadLine();
+
+            for (int i = 100; i >= 0; i = i - 2)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("Finished!");
+        }
     }
-    Console.WriteLine("Finished!");
-    Console.ReadLine();
-
-
 }
-
