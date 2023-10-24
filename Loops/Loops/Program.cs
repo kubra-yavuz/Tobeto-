@@ -8,12 +8,13 @@ internal class Program
     {
         //ForLoop();
         //WhileLoop();
-        int number = 10;
-        do
+        //DoWhileLoop();
+
+        string[] students = new string[3] { "Engin", "Derin", "Salih" };
+        foreach (var student in students)
         {
-            Console.WriteLine(number);
-            number--;
-        } while (number>=0);
+            Console.WriteLine(student);
+        }
 
         Console.ReadLine();
 
@@ -32,6 +33,16 @@ internal class Program
             }
             Console.WriteLine("Finished!");
         }
+    }
+
+    private static void DoWhileLoop()
+    {
+        int number = 10;
+        do
+        {
+            Console.WriteLine(number);
+            number--;
+        } while (number >= 0);
     }
 
     private static void WhileLoop()
