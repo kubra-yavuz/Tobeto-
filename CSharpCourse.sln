@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypesAndVariables", "TypesAndVariables.csproj", "{B6F29FBC-1694-453A-9AE8-94D4C6F2E4E7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditionals", "..\Conditionals\Conditionals.csproj", "{C0C254C8-F440-44A4-AC1A-FBBDCC77C4D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypesAndVariables", "TypeAndVariables\TypesAndVariables\TypesAndVariables.csproj", "{4366EE61-810C-4B21-8F37-9B2B129CE747}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6F29FBC-1694-453A-9AE8-94D4C6F2E4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6F29FBC-1694-453A-9AE8-94D4C6F2E4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6F29FBC-1694-453A-9AE8-94D4C6F2E4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6F29FBC-1694-453A-9AE8-94D4C6F2E4E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0C254C8-F440-44A4-AC1A-FBBDCC77C4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0C254C8-F440-44A4-AC1A-FBBDCC77C4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0C254C8-F440-44A4-AC1A-FBBDCC77C4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0C254C8-F440-44A4-AC1A-FBBDCC77C4D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4366EE61-810C-4B21-8F37-9B2B129CE747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4366EE61-810C-4B21-8F37-9B2B129CE747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4366EE61-810C-4B21-8F37-9B2B129CE747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4366EE61-810C-4B21-8F37-9B2B129CE747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3274B52-D787-4569-B743-BAFB395C438C}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
