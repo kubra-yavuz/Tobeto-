@@ -15,6 +15,12 @@
         var result5 = sentence.IndexOf("name"); // name ifadesini arar.
         var result6 = sentence.IndexOf(" "); // boşluğu arar. ilk boşlukta durur.
         var result7 = sentence.LastIndexOf(" "); //karakteri sondan aramaya başlar.
+        var result8 = sentence.Insert(0, "Hello, ");// metin yerleştir.
+        var result9 = sentence.Substring();// metni parçalar.
+        var result10 = sentence.ToLower();//bütün karakterleri küçük harfe çevirir.
+        var result11 = sentence.ToUpper();//büyük harfe çevirir.
+        var result12 = sentence.Replace(" ", "-");// örn: metindeki boşluklar yerine çizgi koyar.
+        var result13 = sentence.Remove();//belli bir indexten sonrasını atar.
 
           Console.WriteLine(result7);
         Console.ReadLine();
