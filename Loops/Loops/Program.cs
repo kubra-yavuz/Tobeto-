@@ -9,14 +9,19 @@ internal class Program
         //ForLoop();
         //WhileLoop();
         //DoWhileLoop();
+        //ForEachLoop();
 
-        string[] students = new string[3] { "Engin", "Derin", "Salih" };
-        foreach (var student in students)
+
+        if (IsPrimeNumber(6))
         {
-            Console.WriteLine(student);
+            Console.WriteLine("This is a Prime number");
         }
-
+        else
+        {
+            Console.WriteLine("This is not a prime number");
+        }
         Console.ReadLine();
+
 
         static void ForLoop()
         {
@@ -32,6 +37,29 @@ internal class Program
                 Console.WriteLine(i);
             }
             Console.WriteLine("Finished!");
+        }
+    }
+    
+    
+    private static bool IsPrimeNumber(int number)
+    {
+        bool result = true;
+        for (int i = 2; i < number-1; i++)
+        {
+            if (number%i==0)
+            {
+                result = false;
+                i = number;
+            }
+        }
+        return result;
+    }
+    private static void ForEachLoop()
+    {
+        string[] students = new string[3] { "Engin", "Derin", "Salih" };
+        foreach (var student in students)
+        {
+            Console.WriteLine(student);
         }
     }
 
