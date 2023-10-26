@@ -7,10 +7,28 @@ internal class Program
     {
         //IntarfacesIntro();
 
-        CustomerManager customerManager = new CustomerManager();
-        customerManager.Add(new SqlServerCustomerDal());
+        //Demo();
+
+        ICustomerDal[] customerDals = new ICustomerDal[3]
+        {
+            new SqlServerCustomerDal(),
+            new OracleCustomerDal(),
+            new MySqlCustomerDal()
+
+        };
+
+        foreach (var customerDal in customerDals)
+        {
+            customerDal.Add();
+        }
 
         Console.ReadLine();
+    }
+
+    private static void NewMethod()
+    {
+        CustomerManager customerManager = new CustomerManager();
+        customerManager.Add(new SqlServerCustomerDal());
     }
 
     private static void IntarfacesIntro()
